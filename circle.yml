@@ -2,6 +2,12 @@ test:
  post:
    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+<<<<<<< HEAD
 machine:
   java:
     version: openjdk6
+=======
+   machine:
+       java:
+          version: openjdk6
+>>>>>>> parent of 2ed84be... Update circle.yml
